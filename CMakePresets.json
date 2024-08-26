@@ -1,0 +1,76 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "Debug",
+            "displayName": "Debug",
+            "description": "Debug",
+            "generator": "Visual Studio 14 2015",
+            "architecture": "x64",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install/${presetName}",
+                "CMAKE_C_COMPILER": "cl.exe",
+                "CMAKE_CXX_COMPILER": "cl.exe"
+            }
+        },
+        {
+            "name": "Release",
+            "displayName": "Release",
+            "description": "Release",
+            "generator": "Visual Studio 14 2015",
+            "architecture": "x64",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "cl.exe",
+                "CMAKE_CXX_COMPILER": "cl.exe"
+            }
+        },
+        {
+            "name": "rel-with-dbg-info",
+            "displayName": "Release with debug information",
+            "description": "Release with debug information",
+            "generator": "Visual Studio 14 2015",
+            "architecture": "x64",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "cl.exe",
+                "CMAKE_CXX_COMPILER": "cl.exe"
+            }
+        },
+        {
+            "name": "rel-with-min-size",
+            "displayName": "Release with minimal size",
+            "description": "Release with minimal size",
+            "generator": "Visual Studio 14 2015",
+            "architecture": "x64",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": "cl.exe",
+                "CMAKE_CXX_COMPILER": "cl.exe"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Debug",
+            "displayName": "Debug",
+            "configuration": "Debug"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "Release",
+            "configuration": "Release"
+        },
+        {
+            "name": "rel-with-dbg-info",
+            "configurePreset": "rel-with-dbg-info",
+            "configuration": "RelWithDebInfo"
+        },
+        {
+            "name": "rel-with-min-size",
+            "configurePreset": "rel-with-min-size",
+            "configuration": "MinSizeRel"
+        }
+    ]
+}
