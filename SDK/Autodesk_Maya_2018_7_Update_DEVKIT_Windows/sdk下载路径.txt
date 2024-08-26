@@ -1,0 +1,7 @@
+// 2018.7 sdk下载路径 
+
+https://autodesk-adn-transfer.s3-us-west-2.amazonaws.com/ADN+Extranet/M%26E/Maya/devkit+2018/Autodesk_Maya_2018_7_Update_DEVKIT_Windows.zip
+
+https://autodesk-adn-transfer.s3-us-west-2.amazonaws.com/ADN+Extranet/M%26E/Maya/devkit+2018/Autodesk_Maya_2018_7_Update_DEVKIT_Mac.dmg
+
+https://autodesk-adn-transfer.s3-us-west-2.amazonaws.com/ADN+Extranet/M%26E/Maya/devkit+2018/Autodesk_Maya_2018_7_Update_DEVKIT_Linux.tgz
