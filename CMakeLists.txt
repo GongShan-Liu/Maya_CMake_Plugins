@@ -27,7 +27,7 @@ find_package(Maya REQUIRED)
 # 设置MAYA_SRCS变量
 set(MAYA_PLUGINS_SRCS 
 	helloWorldCmd 
-	circleNode
+	circle_test
 	CACHE STRING "Maya Project")
 
 # 把多个插件项目循环添加到cmake构建子目录
